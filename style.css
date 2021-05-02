@@ -1,0 +1,194 @@
+
+body {
+    background-color: rgb(11, 25, 46);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.owner-name {
+    font-size: 2rem
+}
+
+.animation-text {
+    font-size: 1.5rem;
+}
+
+#type-writer {
+    color: rgb(111, 254, 220);
+    font-size: 1.5rem;
+    border-right: 1px solid;
+}
+
+.navbar-text {
+    text-decoration: none;
+    font-family: calibri;
+    color: white;
+    border-bottom: 2px solid rgb(12, 25, 45);
+}
+
+.navbar-text:hover {
+    transition: 0.1s;
+    color: rgb(111, 254, 220);
+    border-bottom: 1px solid rgb(111, 254, 220);
+}
+
+.profile-image {
+    clip-path: circle();
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 40, 29);
+    border-radius: 50%;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+.social-icons i:nth-child(1) {
+    color: white;
+    background-color: rgb(46, 40, 29);
+}
+
+.social-icons a:hover {
+    background-color: rgb(46, 40, 29);
+    transition: all ease 0.4s;
+}
+
+.attached-social-bar {
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+
+.attached-social-bar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(46, 40, 29);
+    border: 1px solid rgb(0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+.attached-social-bar a:hover {
+    background-color: rgb(46, 40, 29);
+    transform: translateY(-5px);
+}
+
+.attached-social-bar i {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(46, 40, 29);
+}
+
+#github:hover {
+    color: rgb(0, 0, 0);
+}
+
+#linkedin:hover {
+    color: rgb(23, 120, 178);
+}
+
+#facebook:hover {
+    color: rgb(74, 104, 167);
+}
+
+.project-cards {
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+.project-cards:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 0px 20px -5px rgb(255, 255, 255);
+}
+
+.contact-form {
+    background-color: rgb(24, 42, 68);
+    border-radius: 5px;
+}
+
+.font-italic {
+    color: rgb(111, 254, 220);
+}
+
+.brand-text {
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(111, 254, 220);
+    border-bottom: 2px solid;
+}
+
+.skill-text span {
+    color: white;
+    background: #4B5769;
+    margin-right: 1px;
+    margin-top: 3px;
+    border-radius: 3px;
+    padding: 3px 10px;
+    font-size: 13px;
+    line-height: 26px;
+}
+
+#status {
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: rgb(242, 54, 21);
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .attached-social-bar {
+        display: none;
+    }
+}
