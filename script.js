@@ -68,8 +68,6 @@ window.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// helper function for sending an AJAX request
-
 function ajax(method, url, data, success, error) {
     var xhr = new XMLHttpRequest();
     xhr.open(method, url);
